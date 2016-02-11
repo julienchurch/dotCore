@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>DotCore LightBox</title>
+        <link rel="stylesheet" href="src/lightbox/lightbox.css">
+    </head>
+    <body>
+        <div id="lightbox" data-core="lightbox">
+            This is the modal
+            <button type="button" data-core="lightbox-close">Close Lightbox</button>
+            <div data-core="modal-template">This is the modal template</div>
+        </div>
+
+        <section class="gallery">
+            <div class="first gallery-item">
+                This is some content
+                <img id="thumbnail" src="img/trees-small.jpg" width="300" height="200" data-fullres="http://www.chinalawblog.com/files/2015/09/Brorfelde_landscape_2.jpg" />
+            </div>
+        </section>
+        <script src="src/lightbox/classie.js"></script>
+        <script src="src/lightbox/DotCore.js"></script>
+        <script src="src/lightbox/Lightbox.js"></script>
+        <script>
+            var lightbox = new Core.Lightbox( document.getElementById("lightbox") );
+            var targets = lightbox.compileTargets( "#thumbnail", "data-fullres" )
+            lightbox.addTargets( targets )
+        </script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+[submodule ".app/hfsnotify"]
+	path = .app/hfsnotify
+	url = https://github.com/haskell-fswatch/hfsnotify.git
+[submodule ".app/scripts/hfsnotify"]
+	path = .app/scripts/hfsnotify
+	url = https://github.com/haskell-fswatch/hfsnotify.git

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>DotCore LightBox</title>
+        <link rel="stylesheet" href="src/modal/modal.css">
+        <!-- `main.css` comprises rules not necessary to DotCore. They're
+              there only to prettify things. -->
+        <link rel="stylesheet" href="src/.global_styles/main.css">
+    </head>
+    <body>
+        <div id="modal" data-core="modal">
+            This is the modal
+            <button type="button" data-core="modal-close">Close</button>
+            <div data-core="modal-template">This is the modal template</div>
+        </div>
+        <header class="layout-header">
+            <div class="wrap">
+            <div class="logo"></div>
+            <nav class="layout-header__nav">
+                <ul>
+                    <li><a href="#">First link</a></li>
+                    <li><a href="#">First link</a></li>
+                    <li><a href="#">First link</a></li>
+                    <li><a href="#">First link</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+        <section class="docs-modal">
+            <div class="wrap">
+                <h3>Modal</h3>
+                <p>The modal element is ...</p> 
+                <button data-core="modal-target">Open a modal!</button>
+            </div>
+        </section>
+
+        <script src="src/modal/classie.js"></script>
+        <script src="src/modal/DotCore.js"></script>
+        <script src="src/modal/Modal.js"></script>
+        <script>
+            var modal1 = new Core.Modal( document.getElementById( "modal" ) );
+            modal1.addTargets( document.querySelectorAll( "[data-core=modal-target]" ) );
+        </script>
+    </body>
+</html>

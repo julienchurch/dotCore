@@ -1,0 +1,24 @@
+HUH?
+~~~~
+Seriously, ignore this shit.
+
+This directory contains styles used by the examples that are not strictly a part
+of DotCore. Feel free to reuse them, modify them, or print them out and eat 
+them; just understand that omitting them from your project will have no impact
+on the behavior of DotCore.
+
+The only necessary (or strongly suggested) CSS files for a given UI element are 
+included the the top-level `css` directory.
+
+WHY THO?
+~~~~~~~~
+DotCore is a library to provide easy-to-use, best-practices UI functionality.
+I started writing it after I got tired of looking for a UI kit that didn't
+require me to strip a bunch of unwanted code before I began. It is a set of
+"core" functionalities.
+
+Anything but the bare essentials is antithetical to DotCore. As such, pretty 
+styles are not a part of its intended scope, and are included in the examples 
+only for the sake of my own neurosis.
+
+Now go write some code or whatever.
